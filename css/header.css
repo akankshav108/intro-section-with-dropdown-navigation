@@ -92,10 +92,10 @@ nav a:focus {
   padding: 1em;
   border-radius: 0.5em;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  animation: fadein 0.5s ease-in;
+  /* animation: fadein 0.5s ease-in; */
 }
 
-@keyframes fadein {
+/* @keyframes fadein {
   0% {
     opacity: 0;
     
@@ -104,7 +104,7 @@ nav a:focus {
   100% {
     opacity: 1;
   }
-}
+} */
 
 .drop-content a {
   display: flex;
