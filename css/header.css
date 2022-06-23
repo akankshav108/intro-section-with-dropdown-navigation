@@ -164,17 +164,22 @@ nav #close {
   }
 
   nav {
-    display: none;
+    display: block;
     position: fixed;
     background-color: hsl(0, 0%, 100%);
     top: 0;
     height: 100vh;
     width: 17em;
     z-index: 3;
-    animation: slide 0.5s ease-in;
+    right: -17em;
   }
 
-  @keyframes slide {
+
+  .slideIn{
+    animation: slideIn 0.5s ease-in;
+  }
+
+  @keyframes slideIn {
     0% {
       right: -17em;
     }
@@ -183,6 +188,25 @@ nav #close {
       right: 0em;
     }
   }
+
+
+  .slideOut{
+    animation: sildeOut 0.5s ease-out;
+  }
+
+  @keyframes sildeOut {
+
+    0%{
+      right: 0em;
+    }
+
+    100%{
+      right: -17em;
+    }
+    
+  }
+
+
 
   nav a {
     cursor: default;
@@ -269,6 +293,14 @@ nav #close {
     z-index: 2;
   }
 
+  .show{
+    display: block;
+  }
+
+  .hide {
+    display: none;
+  }
+
   .drop-content {
     display: none;
     position: relative;
@@ -278,11 +310,6 @@ nav #close {
     padding: 1em 1em 0 1em;
   }
 
-  .show {
-    display: block;
-  }
+  
 
-  .hide {
-    display: none;
-  }
 }
