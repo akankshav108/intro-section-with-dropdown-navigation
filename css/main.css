@@ -1,7 +1,8 @@
 .main {
-  padding: 2em 5em 0em 5em;
+  padding: 2em 7em 0em 7em;
   display: flex;
   gap: 1em;
+  min-height: 90vh;
 }
 
 .main > section {
@@ -27,7 +28,7 @@
 
 .about-company h1 {
   /* font-size: 5rem; */
-  font-size: clamp(3rem, 6vw, 5rem);
+  font-size: clamp(2rem, 5vw, 5rem);
   color: hsl(0, 0%, 8%);
   margin: 3rem 0 3rem 0;
   line-break: strict;
