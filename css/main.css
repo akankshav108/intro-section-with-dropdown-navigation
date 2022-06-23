@@ -26,7 +26,8 @@
 }
 
 .about-company h1 {
-  font-size: 70px;
+  /* font-size: 5rem; */
+  font-size: clamp(3rem, 6vw, 5rem);
   color: hsl(0, 0%, 8%);
   margin: 3rem 0 3rem 0;
   line-break: strict;
@@ -68,7 +69,6 @@
 
 @media (max-width: 1160px) {
   .about-company h1 {
-    font-size: 55px;
     margin: 1.5rem 0 3rem 0;
   }
 }
