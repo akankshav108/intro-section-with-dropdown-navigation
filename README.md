@@ -33,7 +33,8 @@ Users should be able to:
 
 #### Screenshot - Mobile
 
-![Screenshot - mobile](./images/ss-mobile.png)
+![Screenshot - mobile](./images/ss-mobile1.png)
+![Screenshot - mobile](./images/ss-mobile2.png)
 
 ### Links
 
