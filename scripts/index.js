@@ -13,16 +13,17 @@ const menu = {
   close: "/images/icon-close-menu.svg",
 };
 
-const maxMobWidth = 900;
 
 const menuLink = document.querySelectorAll(".drop-link");
 const menuBtn = document.querySelector(".menuBtn");
 const nav = document.querySelector("nav");
 const filter = document.querySelector(".filter");
 const heroImg = document.querySelector(".hero");
-let isMenuOpen = false;
 
+
+let isMenuOpen = false;
 menuBtn.style.zIndex = "1000";
+const maxMobWidth = 900;
 
 const toggleMenu = (target) => {
   let dropOpts = target.nextElementSibling;

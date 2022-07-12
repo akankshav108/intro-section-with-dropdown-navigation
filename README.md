@@ -1,6 +1,4 @@
-# Frontend Mentor - Intro section with dropdown navigation solution
-
-This is a solution to the [Intro section with dropdown navigation challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/intro-section-with-dropdown-navigation-ryaPetHE5). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+Intro section with dropdown navigation solution
 
 ## Table of contents
 
@@ -15,8 +13,6 @@ This is a solution to the [Intro section with dropdown navigation challenge on F
   - [Useful resources](#useful-resources)
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
