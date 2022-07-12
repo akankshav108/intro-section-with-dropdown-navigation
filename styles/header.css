@@ -20,17 +20,21 @@ a {
 
 header,
 nav,
-#logo {
+.logo {
   padding: 0.7em;
   display: flex;
   align-items: center;
+}
+
+.menuBtn{
+  display: none;
 }
 
 header {
   width: 100%;
 }
 
-#logo {
+.logo {
   text-align: center;
   flex: 0.2;
   font-weight: 700;
@@ -92,32 +96,12 @@ nav a:focus {
   padding: 1em;
   border-radius: 0.5em;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  /* animation: fadein 0.5s ease-in; */
 }
-
-/* @keyframes fadein {
-  0% {
-    opacity: 0;
-    
-  }
-
-  100% {
-    opacity: 1;
-  }
-} */
 
 .drop-content a {
   display: flex;
   gap: 1em;
   padding: 0.6em;
-}
-
-.dropdown:focus-within .drop-content {
-  display: block;
-}
-
-.open {
-  display: block;
 }
 
 .btn-links {
@@ -142,25 +126,28 @@ nav a:focus {
   border: 2px solid hsl(0, 0%, 8%);
 }
 
-.hamburger {
+.hide{
   display: none;
 }
-
-nav #close {
-  display: none;
+.show{
+  display: block;
 }
 
 
 /*--------------------Media Queries--------------------*/
 
-@media (max-width: 1025px) {
+@media (max-width: 900px) {
   header {
     justify-content: space-between;
   }
 
-  #logo {
+  .logo {
     flex: none;
     padding: 0;
+  }
+
+  .menuBtn{
+    display: block;
   }
 
   nav {
@@ -169,6 +156,7 @@ nav #close {
     background-color: hsl(0, 0%, 100%);
     top: 0;
     height: 100vh;
+    right: 0;
     width: 17em;
     z-index: 3;
     right: -17em;
@@ -177,6 +165,7 @@ nav #close {
 
   .slideIn{
     animation: slideIn 0.5s ease-in;
+    right: 0em;
   }
 
   @keyframes slideIn {
@@ -192,6 +181,7 @@ nav #close {
 
   .slideOut{
     animation: sildeOut 0.5s ease-out;
+    right: -17em;
   }
 
   @keyframes sildeOut {
@@ -205,56 +195,19 @@ nav #close {
     }
     
   }
-
-
-
+   
   nav a {
     cursor: default;
   }
 
-  #hamburger {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4em;
-  }
-
-  #hamburger div {
-    border-bottom: 3px solid hsl(0, 0%, 8%);
-    width: 2.2em;
-  }
-
+ 
   nav > * {
     padding: 0em;
   }
 
-  nav #close {
-    display: block;
-    padding: 1.5em;
-    position: relative;
-  }
-
-  #close:hover {
-    opacity: 1;
-  }
-  #close:before,
-  #close:after {
-    position: absolute;
-    top: 0;
-    right: 1em;
-    content: " ";
-    height: 33px;
-    width: 2px;
-    background-color: hsl(0, 0%, 8%);
-  }
-  #close:before {
-    transform: rotate(45deg);
-  }
-  #close:after {
-    transform: rotate(-45deg);
-  }
-
   .nav-links {
     display: block;
+    margin-top: 3em;
   }
 
   .nav-links > * {
@@ -262,17 +215,20 @@ nav #close {
     padding: 1em 0.5em 1em 0.5em;
   }
 
+  
   .btn-links {
     display: block;
     padding-top: 1em;
   }
 
+  
   .btn-links > * {
     display: block;
     padding: 0.5em 1em 0.5em 1em;
     text-align: center;
   }
 
+  
   #register-btn {
     border: 2px solid hsl(0, 0%, 41%);
     padding: 0.8em;
@@ -281,6 +237,7 @@ nav #close {
     border-radius: 0.9em;
   }
 
+   
   .filter {
     display: none;
     position: fixed;
@@ -297,19 +254,12 @@ nav #close {
     display: block;
   }
 
-  .hide {
-    display: none;
-  }
-
   .drop-content {
-    display: none;
     position: relative;
     top: 0.5em;
     left: 50%;
     box-shadow: none;
     padding: 1em 1em 0 1em;
   }
-
-  
 
 }

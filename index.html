@@ -13,8 +13,8 @@
 
     <title>Intro section with dropdown navigation</title>
 
-    <link rel="stylesheet" type="text/css" href="./css/header.css" />
-    <link rel="stylesheet" type="text/css" href="./css/main.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/header.css" />
+    <link rel="stylesheet" type="text/css" href="./styles/main.css" />
 
     <script
       src="https://kit.fontawesome.com/b4ed34cba4.js"
@@ -23,84 +23,101 @@
   </head>
 
   <body>
-    <div class="filter"></div>
+    <main role="main">
+      <div class="filter"></div>
+      <header>
+        <div class="logo"><img src="./images/logo.svg" alt="logo" /></div>
+        <div class="menuBtn">
+          <img src="./images/icon-menu.svg" alt="menu icon" />
+        </div>
 
-    <header>
-      <section id="logo"><h3>snap</h3></section>
-      <section id="hamburger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </section>
-
-      <nav>
-        <section id="close"></section>
-        <section class="nav-links">
-          <div class="dropdown">
-            <button class="drop-link">
-              <a href="#">Features <i class="fa-solid fa-angle-down"></i> </a>
-            </button>
-            <div class="drop-content">
-              <a href="#"><img src="./images/icon-todo.svg" alt="icon-todo"/> Todo List </a>
-              <a href="#"><img src="./images/icon-calendar.svg" alt="icon-calendar"/>Calender</a>
-              <a href="#"><img src="./images/icon-reminders.svg" alt="icon-reminders"/>Reminders</a>
-              <a href="#"><img src="./images/icon-planning.svg" alt="icon-todo"/>Planning</a>
+        <nav>
+          <div class="nav-links">
+            <div class="dropdown">
+                <a href="#" class="drop-link"
+                  >Features
+                  <img
+                    id="arrow-icon"
+                    src="./images/icon-arrow-down.svg"
+                    alt="arrow icon"
+                  />
+                </a>
+              <div class="drop-content ">
+                <a href="#"
+                  ><img src="./images/icon-todo.svg" alt="icon-todo" /> Todo
+                  List
+                </a>
+                <a href="#"
+                  ><img
+                    src="./images/icon-calendar.svg"
+                    alt="icon-calendar"
+                  />Calender</a
+                >
+                <a href="#"
+                  ><img
+                    src="./images/icon-reminders.svg"
+                    alt="icon-reminders"
+                  />Reminders</a
+                >
+                <a href="#"
+                  ><img
+                    src="./images/icon-planning.svg"
+                    alt="icon-todo"
+                  />Planning</a
+                >
+              </div>
             </div>
+
+            <div class="dropdown">
+                <a href="#" class="drop-link"
+                  >Company
+                  <img src="./images/icon-arrow-down.svg" alt="arrow icon"
+                /></a>
+              <div class="drop-content ">
+                <a href="#">History</a>
+                <a href="#">Our Team</a>
+                <a href="#">Blog</a>
+              </div>
+            </div>
+
+            <a href="#">Careers</a>
+            <a href="#">About</a>
           </div>
 
-          <div class="dropdown">
-            <button class="drop-link">
-              <a href="#">Company <i class="fa-solid fa-angle-down"></i></a>
-            </button>
-            <div class="drop-content">
-              <a href="#">History</a>
-              <a href="#">Our Team</a>
-              <a href="#">Blog</a>
-            </div>
+          <div class="btn-links">
+            <a href="#">Login</a>
+            <a href="#"><button id="register-btn">Register</button></a>
           </div>
+        </nav>
+      </header>
 
-          <a href="#">Careers</a>
-          <a href="#">About</a>
-        </section>
+      <div class="main">
+        <div class="about-company">
+          <h1>Make remote work</h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline
+            processes, create team rituals, and watch productivity soar.
+          </p>
+          <button id="more">Learn more</button>
 
-        <section class="btn-links">
-          <a href="#">Login</a>
-          <a href="#"><button id="register-btn">Register</button></a>
-        </section>
-      </nav>
-    </header>
+          <div class="clients">
+            <img src="./images/client-databiz.svg" alt="databiz" />
+            <img src="./images/client-audiophile.svg" alt="audiophile" />
+            <img src="./images/client-meet.svg" alt="meet" />
+            <img src="./images/client-maker.svg" alt="maker" />
+          </div>
+        </div>
+        <div class="hero">
+          <img
+            src="./images/image-hero-desktop.png"
+            alt="image-hero"
+          />
+        </div>
+      </div>
 
-    <section class="main">
-      <section class="about-company">
-        <h1>Make remote work</h1>
-        <p>
-          Get your team in sync, no matter your location. Streamline processes,
-          create team rituals, and watch productivity soar.
-        </p>
-        <button id="more">Learn more</button>
 
-        <section class="client">
-          <img src="./images/client-databiz.svg" alt = "client-databiz"/>
-          <img src="./images/client-audiophile.svg" alt = "client-audiophile"/>
-          <img src="./images/client-meet.svg" alt = "client-meet"/>
-          <img src="./images/client-maker.svg" alt = "client-maker"/>
-        </section>
-      </section>
-      <section class="about-img">
-        <img
-          src="./images/image-hero-desktop.png"
-          alt="image-hero-desktop"
-          id="image-hero-desktop"
-        />
-        <img
-          src="./images/image-hero-mobile.png"
-          alt="image-hero-mobile"
-          id="image-hero-mobile"
-        />
-      </section>
-    </section>
+    </main>
 
-    <script src="./js/drop-down.js"></script>
-    <script src="./js/side-nav.js"></script>
+    <script src="./scripts/index.js"></script>
   </body>
 </html>

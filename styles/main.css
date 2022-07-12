@@ -1,5 +1,6 @@
+@import url(fonts.css);
 .main {
-  padding: 2em 7em 0em 7em;
+  padding: 4em 7em 0em 7em;
   display: flex;
   gap: 1em;
   min-height: 90vh;
@@ -9,14 +10,14 @@
   flex: 1;
 }
 
-.about-img {
+.hero {
   text-align: center;
 }
 
 #image-hero-mobile {
   display: none;
 }
-.about-img img {
+.hero img {
   width: 26em;
   padding-left: 1em;
 }
@@ -27,7 +28,6 @@
 }
 
 .about-company h1 {
-  /* font-size: 5rem; */
   font-size: clamp(2rem, 5vw, 5rem);
   color: hsl(0, 0%, 8%);
   margin: 3rem 0 3rem 0;
@@ -58,11 +58,11 @@
   color: hsl(0, 0%, 41%);
 }
 
-.about-company .client {
+.about-company .clients {
   margin-top: 4em;
 }
 
-.client img {
+.clients img {
   padding-right: 4%;
 }
 
@@ -74,7 +74,7 @@
   }
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 900px) {
   .main {
     padding: 2em 0em 0em 0em;
     display: flex;
@@ -108,11 +108,11 @@
     padding: 1em;
   }
 
-  .about-img {
+  .hero {
     width: 100%;
   }
 
-  .about-img img {
+  .hero img {
     width: 100%;
     padding: 0;
   }
